@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es" class="hidden">
+<head>
+    <title>Aprobación</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+    <meta name="google-signin-client_id" content="1074049112107-d7nbcbl7rvq42e7khml5ji22p9pu3dpd.apps.googleusercontent.com">
+</head>
+<body>
+    <div class="container">
+		<div class="page-header" style="border-bottom-color:#fe7007">
+			<nav class="navbar ">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<img  src="../img/gnp.png"class="rounded float-right logo" style="min-width: 137px; min-height: 57px"> 	
+					</div>
+					<ul class="nav navbar-nav" align="center">
+						<h3 class="letraazul">Aprobación de facturación</h3>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li align="center"><span class="letraazul">Hola,</span>&nbsp;&nbsp;<span class="letraazul" id="luser">@user</span>&nbsp;&nbsp;</li>
+						<li align="center"><span class="letraazul"><img class="profile" align = "right" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?" width="40px" height="40px"  alt="" ></span></li>
+						<li align="center" class="handCursor" id="out"><span class="letraazul">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span class="letraazul glyphicon glyphicon-log-out"></span>&nbsp;&nbsp;<span class="letraazul">Cerrar sesión</span></li>
+					</ul>         
+				</div>
+			</nav>
+		</div>
+	</div>
+	<div class="col-md-11">
+		<br><br>
+		 <div class="row">
+			<div class="col-md-12" style="text-align: center;" >
+				<FONT FACE="Verdana" SIZE=5 COLOR=#fe7007>&nbsp;&nbsp;B i e n v e n i d o</FONT>
+			</div>
+		</div>
+		<br><br><br><br>
+		 <div class="row">
+			<div class="col-md-12" style="text-align: center;" >
+				<FONT FACE="Verdana" SIZE=4 COLOR=#1f3f79>&nbsp;&nbsp;&nbsp;Selecciona una entrada</FONT>
+			</div>
+		</div>
+		<br><br><br><br>
+		<div class="row">
+			<div class="col-sm-1" style="text-align: center;" ></div>
+			<div class="col-md-2" style="text-align: center;" >
+				<img class="hidden handCursor notadmin" id = "adminok" src="../img/adminok.png" style="max-height:120px;max-width: 120px min-height: 10px;!important min-width: 10px">
+				<img class="handBlock notadmin hidden" id = "adminblock" src="../img/adminblock.png" style="max-height:120px;max-width: 120px min-height: 10px;!important min-width: 10px">
+				<h4 class="letramain notadmin hidden">Administrador&nbsp;&nbsp;</h4>
+			</div>
+			<div class="col-sm-2" style="text-align: center;" ></div>
+			<div class="col-md-2" style="text-align: center;" >
+				<img class="hidden handCursor" id="proveeok" src="../img/Proveeok.png" style="max-height:120px;max-width: 120px min-height: 10px;!important min-width: 10px">
+				<img class="handBlock hidden" id="proveeblock" src="../img/Proveeblock.png" style="max-height:120px;max-width: 120px min-height: 10px;!important min-width: 10px">
+				<h4 class="letraprovee hidden">Proveedor</h4>
+			</div>
+			<div class="col-md-2" style="text-align: center;" ></div>
+			<div class="col-md-2" style="text-align: center;" >
+				<img class="hidden notadmin handCursor" id="pmook" src="../img/PMOok.png" style="max-height:120px;max-width: 120px min-height: 10px;!important min-width: 10px">
+				<img class="handBlock notadmin hidden" id="pmoblock" src="../img/PMOblock.png" style="max-height:120px;max-width: 120px min-height: 10px;!important min-width: 10px">
+				<h4 class="letramain notadmin hidden">PMO</h4>
+			</div>
+		</div>
+	</div>
+    <br><br><br><br><br><br><br><br>
+    <footer class="footer">
+        <div class="container " align = "center">
+            <br><br>
+            <img src="../img/slogan.png">   
+        </div>
+    </footer>
+	<script type="application/javascript" src="../js/main.js"></script>
+	<script type="application/javascript" src="../js/onload.js"></script>
+	<script type="application/javascript" src="../js/common.js"></script>
+	<script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
+</body>
+</html>

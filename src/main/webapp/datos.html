@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es" class="hidden">
+<head>
+    <title>Aprobación</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="../img/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link href="../css/styles.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="../css/magnific-popup.css">  
+	<link rel="stylesheet" href="../css/datatable.css">  
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.css">
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+	<script src="../js/jquery.magnific-popup.js"></script>
+    <meta name="google-signin-client_id" content="1074049112107-d7nbcbl7rvq42e7khml5ji22p9pu3dpd.apps.googleusercontent.com">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<script src="../js/dataTables.min.js"></script>
+</head>
+<body>
+    <div class="container">
+		<div class="page-header" style="border-bottom-color:#fe7007">
+			<nav class="navbar ">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<img  src="../img/gnp.png" id="home" class="rounded float-right logo handCursor" style="min-width: 137px; min-height: 57px"> 	
+					</div>
+					<ul class="nav navbar-nav" align="center">
+						<h3 class="letraazul">Aprobación de facturación</h3>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li align="center"><span class="letraazul">Hola,</span>&nbsp;&nbsp;<span class="letraazul" id="luser">@user</span>&nbsp;&nbsp;</li>
+						<li align="center"><span class="letraazul"><img class="profile" align = "right" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?" width="40px" height="40px"  alt="" ></span></li>
+						<li align="center" class="handCursor" id="out"><span class="letraazul">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;<span class="letraazul glyphicon glyphicon-log-out"></span>&nbsp;&nbsp;<span class="letraazul">Cerrar sesión</span></li>
+					</ul>         
+				</div>
+			</nav>
+		</div>
+	</div>
+	<div class="col-md-12">
+		<br><br>
+		 <div class="row">
+			<div class="col-md-3" style="text-align: center;" >
+				<FONT FACE="Verdana" SIZE=5 COLOR=#fe7007>&nbsp;&nbsp;A d m i n i s t r a d o r</FONT>
+				<br><br>
+				<a href="admin.html">
+				   <span class="glyphicon glyphicon-menu-left" style="font-size: 25px">Menu</span>
+				</a>
+			</div>
+			<div class="col-xs-12 col-sm-8" style="text-align: center; border-bottom-color: #d5dae5; border-style: solid; border-right-color: #d5dae5; border-left-color: #d5dae5; border-top-color: #d5dae5; border-width: 2px; height: 120px" >
+				<br>
+			<br>
+			 <div class="col-xs-5  col-sm-3" >
+				 <div class="row">
+				<select id="inputfilter" class="" >
+					<option selected value = "0">No selection</option>
+					<option value="1">PROYECTO</option>
+					<option value="2">SUBPROYECTO</option>
+					<option value="3">NÚMERO DE EMPLEADO</option>
+					<option value="4">NOMBRE DE EMPLEADO</option>
+					<option value="5">CORREO PM</option>
+					<option value="6">CORREO FUNCIONARIO</option>
+					<option value="7">NO. DOCUMENTO</option>
+					<option value="8">PROVEEDOR</option>
+				</select> 
+			</div></div>
+				
+			<div class="col-xs-5 col-md-3">
+				<input id = "txtfilter" class="select-box" type="text" placeholder="Filtrar por ...">
+			</div>
+			
+			<div class="col-xs-2 col-md-2">
+                  <input class="btn  buttons " type="submit" value = "FILTRAR" id = "btnFiltrar">
+            </div>
+			<div class=" col-xs-6 col-md-2" > 
+				<select id="inputmes" class="" >
+					<option selected value = "0">Periodo</option>
+					<option value="11">ENERO</option>
+					<option value="12">FEBRERO</option>
+					<option value="13">MARZO</option>
+					<option value="14">ABRIL</option>
+					<option value="15">MAYO</option>
+					<option value="16">JUNIO</option>
+					<option value="17">JULIO</option>
+					<option value="18">AGOSTO</option>
+					<option value="19">SEPTIEMBRE</option>
+					<option value="20">OCTUBRE</option>
+					<option value="21">NOVIEMBRE</option>
+					<option value="22">DICIEMBRE</option>
+				</select> 
+			</div>
+			 <div class="col-xs-3 col-md-2">
+				<input class="btn  buttons " type="submit" value = "QUITAR FILTRO" id = "btnQuitarFiltrar">
+			</div>	
+				<br><br><br><br>
+			</div>
+		</div>
+		 
+		
+		<br><br>
+		<div class="row">
+			<div class="col-sm-12" style="text-align: center;" ></div>
+			<div class="col-xs-12 col-md-12 fondoBlanco table-responsive letraazultexto" id="tTable">
+				
+			</div>
+		 </div>
+	</div>
+    <br><br><br><br><br><br><br><br>
+    <footer class="footer">
+        <div class="container " align = "center">
+            <br><br>
+            <img src="../img/slogan.png">   
+        </div>
+    </footer>
+	<!--POP UP LOADING-->
+	<div id="popup" class=" mfp-hide" role="dialog">
+		<div id="logocargar" class="container-fluid"  style= "display: none;">
+			<div class="row" align="center">
+			<h3 style="color: white;">Cargando ...</h3>
+			<br><br>
+			   <img alt="logo" src="../img/u.gif" width="80px" height="80px">
+			</div>
+		</div>
+	</div>
+	<script type="application/javascript" src="../js/datos.js"></script>
+	<script type="application/javascript" src="../js/onloadadmin.js"></script>
+	<script type="application/javascript" src="../js/common.js"></script>
+	<script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+runtime: python27
+service: default
+threadsafe: true
+
+handlers:
+
+- url: /img/
+  static_dir: img
+
+- url: /js/
+  static_dir: js
+
+- url: /css/
+  static_dir: css  
+
+- url: /app/
+  static_dir: app 
+
+- url: /.*
+  static_files: index.html
+  upload: index.html
